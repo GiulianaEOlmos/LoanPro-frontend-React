@@ -8,8 +8,8 @@ This is the frontend component of the TrueNorth TakeHome project, specifically d
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/project-name.git`
-2. Navigate to the project directory: `cd project-name`
+1. Clone the repository: `git clone https://github.com/GiulianaEOlmos/LoanPro-frontend-React.git`
+2. Navigate to the project directory: `cd LoanPro-frontend-React`
 3. Install the dependencies: `npm install`
 4. Start the development server: `npm start`
 
