@@ -30,3 +30,11 @@ To deploy this project with AWS Amplify, follow these steps:
 7. Click on "Add environment variable". For each variable in your .env file, add a new environment variable with the same name and value.
 8. Click on "Save" to save your environment variables.
 9. Finally, trigger a new build for your app by clicking on "Trigger build" in the left sidebar, then "Start build".
+
+## env variables
+
+To populate the environment variables `REACT_APP_GET_RECORDS_URL`, `REACT_APP_DELETE_RECORDS_URL`, `REACT_APP_NEW_OPERATION_URL`, and `REACT_APP_LOGIN_URL` in your .env file, you'll first need to deploy your backend.
+
+The backend for this project is located at https://github.com/GiulianaEOlmos/LoanPro-Backend-Serverless. Detailed deployment instructions are provided in the README file of that repository.
+
+After running `serverless deploy` as instructed, you'll see an endpoint URL in your console output. Use this URL to populate the aforementioned environment variables in your .env file for local development, as well as in the build settings on AWS Amplify for production deployment.
