@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# React Frontend with AWS Amplify (LoanPro Frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is the frontend component of the TrueNorth TakeHome project, specifically designed for the client, LoanPro. The application is built using React. To ensure scalability and robustness, the application is deployed on AWS Amplify, a comprehensive cloud platform that enables developers to quickly and easily build secure and scalable web applications.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+To run this project locally, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository: `git clone https://github.com/your-username/project-name.git`
+2. Navigate to the project directory: `cd project-name`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm start`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+Once the development server is running, you can access the application in your web browser at `http://localhost:3000`. Use the provided login credentials to log in and explore the features of the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deploying with AWS Amplify
 
-### `npm run build`
+To deploy this project with AWS Amplify, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Push your code to a Git repository (GitHub, Bitbucket, GitLab, or AWS CodeCommit).
+2. Log in to the AWS Management Console and open the Amplify console.
+3. Click on "Connect app", then "From version control", and follow the steps to connect your repository.
+4. In the "Configure build settings" step, you can specify your build commands. If you're using Create React App, the default settings should work fine.
+5. After you've connected your app, click on it in the Amplify console to open the app details page.
+6. Click on "Environment variables" in the left sidebar.
+7. Click on "Add environment variable". For each variable in your .env file, add a new environment variable with the same name and value.
+8. Click on "Save" to save your environment variables.
+9. Finally, trigger a new build for your app by clicking on "Trigger build" in the left sidebar, then "Start build".
