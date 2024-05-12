@@ -135,7 +135,7 @@ function NewOperationForm({ user, setUser, setRecords }) {
           severity="error"
           sx={{ width: "100%" }}
         >
-          {{ message }}
+          {message}
         </Alert>
       </Snackbar>
     </Box>
