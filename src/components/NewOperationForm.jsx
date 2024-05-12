@@ -21,6 +21,9 @@ function NewOperationForm({ user, setUser, setRecords }) {
   const [inputB, setInputB] = useState(0);
   const [result, setResult] = useState("");
   const [open, setOpen] = useState(false);
+  const [message, setMessage] = useState(
+    `An error occurred during the operation.`
+  );
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -38,6 +41,11 @@ function NewOperationForm({ user, setUser, setRecords }) {
     console.log(operationData);
 
     try {
+      if (user.balance < cost) {
+        setMessage(`Insufficient balance to perform the operation.`);
+        setOpen(true);
+        return;
+      }
       const response = await createNewOperation(operationData);
       console.log(response.data.response);
       const newBalance = response.data.response.newBalance;
@@ -127,7 +135,7 @@ function NewOperationForm({ user, setUser, setRecords }) {
           severity="error"
           sx={{ width: "100%" }}
         >
-          An error occurred during the operation.
+          {{ message }}
         </Alert>
       </Snackbar>
     </Box>
